@@ -1,43 +1,63 @@
-body{
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  
-  
-}
+
 #canvas1{
   
   position: relative;
   opacity: 0;
+ /* top: 0px;*/
+ /* top:-200px;*/
+ /* border: #004a87 solid 1px;*/
   
 
 }
+.App{
+ /* border: #004a87 solid 1px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container{
+  /*position:relative;
+  top:0px;*/
+ /* border: #004a87 solid 1px;*/
+ 
+ position: absolute;
+ top: 100px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80%;
+}
 h1{
   
-  margin-top: 150px;
+ /* margin-top: 150px;*/
   position: fixed;
   color: rgb(139, 136, 136);
 }
 img{
   
-  position:relative;
-  display: block;
+ /* position:relative;*/
+/*  display: block;*/
   width: 100%;
   height: 100%;
 }
 .grid{
   /*width:45%;*/
-  width:60%;
-  
+  width:100%;
+ 
+  /*top: 300px;*/
   align-items: center;
-  position: absolute;
-  left: 310px;
-  display:grid;
+ /* position: absolute;*/
+ /* left: 10%;*/ /* 10% from the left and 80% is the width which will leave 10% from the right and by this way the img is centralized */
+  margin-top: 40px;
+  display:grid; /* and from here comes the responsiveness  */
  /* grid-template-columns: repeat(9, 1fr);*/
   /*grid-template-rows: max-content;*/
 /*  gap: 5px;*/
-  gap:1px;
-  height: 65%;
+  gap:1px; /* this is the line between the tiles*/
+  height: 80%;
 
 }
 .dnd-opacity{
@@ -70,9 +90,10 @@ body {background-color: #111; text-align: center; padding: 30px;background-image
 .game-button {
   position:relative;
   display: inline-flex;
-  left: -30%;
-  margin-bottom: 20px;
-  top: 0;
+  /*left: -30%;*/
+  /*margin-top: 2px;*/
+ /* margin-bottom: 20px;*/
+  top: 0px;
   cursor: pointer;
   text-decoration: none !important;
   outline: none !important;
